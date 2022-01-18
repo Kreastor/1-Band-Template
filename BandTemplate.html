@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="mycss.css">
+    <title>Band Template</title>
+</head>
+<body>
+
+    <section class="wrapper">
+            <div class="container-fluid">
+                <div class="row nav">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 Home">
+                        <nav class="Home-menu">
+                            <ol class="d-flex bd-highlight mb-3 menu">
+                                <li class="p-2 bd-highlight"><a href="#HOME"> HOME </a></li> 
+                                <li class="p-2 bd-highlight"><a href="#BAND"> BAND </a></li>
+                                <li class="p-2 bd-highlight"><a href="#TOUR"> TOUR </a></li>
+                                <li class="p-2 bd-highlight"><a href="#CONTACT"> CONTACT </a></li>
+                                <li class="p-2 bd-highlight"><a href="#MORE"> MORE <span class="arrow"> </span> </a>
+                                    <ol class="submenu">
+                                        <li><a href="#Merchandise">Merchandise</a></li>
+                                        <li><a href="#Extras">Extras</a></li>
+                                        <li><a href="#Media">Media</a></li>
+                                    </ol>
+                                </li>
+                                <li class="ms-auto p-2 bd-highlight"><a id="Search-background-img" href="Search"><img id="Search" src="img/ico-search.png" alt="search-img"></a></li> 
+                            </ol>
+                        </nav>                   
+                    </div>
+                </div>
+                    <div id="slides">
+                        <div class="slide showing">
+                            <h3>Chicago</h3>
+                            <p>Thank you, Chicago - A night we won't forget.</p>
+                            <img src="img/header-1.jpg" alt="header-1">
+                        </div>
+                       <div class="slide">
+                            <h3> Los Angeles </h3>
+                            <p> We had the best time playing at Venice Beach!</p>
+                            <img src="img/header-2.jpg" alt="header-1">
+                        </div>    
+                        <div class="slide">
+                            <h3> New York </h3>
+                            <p> The atmosphere in New York is lorem ipsum. </p> 
+                            <img src="img/header-3.jpg" alt="header-1">
+                        </div>
+                    </div>
+
+                    <script>
+                        //https://www.internet-technologies.ru/articles/sozdaem-prostoe-javascript-slayd-shou-bez-ispolzovaniya-jquery.html 
+                            let slides = document.querySelectorAll('#slides .slide');
+                            let currentSlide = 0;
+                            let slideInterval = setInterval(nextSlide,3500);
+
+                            function nextSlide() {
+                                slides[currentSlide].className = 'slide';
+                                currentSlide = (currentSlide+1)%slides.length;
+                                slides[currentSlide].className = 'slide showing';
+                            }
+                    </script>
+            </div>
+    </section>
+<!--*--------------------------section-1--------------------------section-1--------------------------section-1--------------------------section-1*-------------------------->
+    <section class="section-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 THEBAND">
+                    <div class="THEBAND__title">
+                        <h1>THE BAND</h1>
+                        <h4>We love music</h4>
+                        <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 THEBAND-2">
+                    <div class="NAME-and-Fhoto">
+                        <div class="NAME-and-Fhoto-content">
+                            <h3>Name</h3>
+                            <img style="width:150px; height: 150px;" src="img/ICO-1.jpg" alt="ICO-1">
+                        </div>
+                        <div class="NAME-and-Fhoto-content">
+                            <h3>Name</h3>
+                            <img style="width:150px; height: 150px;" src="img/ICO-1.jpg" alt="ICO-1">
+                        </div>
+                        <div class="NAME-and-Fhoto-content">
+                            <h3>Name</h3>
+                            <img style="width:150px; height: 150px;" src="img/ICO-1.jpg" alt="ICO-1">
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+<!--*--------------------------section-2--------------------------section-2--------------------------section-2--------------------------section-2*-------------------------->
+
+    <section class="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 TOUR-DATES">
+                    <div class="TOUR-DATES__title">
+                        <h1>TOUR DATES</h1>
+                        <h4>Remember to book your tickets!</h4>
+                    </div>
+                </div>
+                <div class="TOUR-DATES__Manth">
+                    <p>September <span> Sold out </span></p>
+                    <p>October  <span> Sold out </span></p>
+                    <p>November <span class="right">3</span></p>
+                </div>
+                <div class="TOUR-DATES__Сities">
+                    <div class="TOUR-DATES__Сities__buy-ticets">
+                        <img src="img/ICO-2.jpg" alt="ICO-2">
+                        <h2>New York</h2>
+                        <h3>Fri 27 Nov 2016</h3>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button><a href="#">Buy Ticets</a></button>
+                    </div>
+                    <div class="TOUR-DATES__Сities__buy-ticets TOUR-center">
+                        <img src="img/ICO-3.jpg" alt="ICO-3">
+                        <h2>Paris</h2>
+                        <h3>Sat 28 Nov 2016</h3>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button><a href="#">Buy Ticets</a></button>
+                    </div>
+                    <div class="TOUR-DATES__Сities__buy-ticets">
+                        <img src="img/ICO-4.jpg" alt="ICO-4">
+                        <h2>San Francisco</h2>
+                        <h3>Sun 29 Nov 2016</h3>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button><a href="#">Buy Ticets</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--*--------------------------section-3--------------------------section-3-------------------------section-3-------------------------section-3*-------------------------->
+    <section class="section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 CONTACTS">
+                    <div class="CONTACTS__title">
+                        <h1>CONTACT</h1>
+                        <h4>Fan? Drop a note!</h4>
+                    </div>
+                    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                </div>
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 CONTACTS-2">
+                    <div class="CONTACTS__form">
+                        <div class="CONTACTS__form__tel">
+                            <ion-icon name="navigate-outline"></ion-icon>
+                            <p> Chicago, US</p>
+                        </div>
+                        <div class="CONTACTS__form__tel">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <p> Phone: +00 151515</p>
+                        </div>
+                        <div class="CONTACTS__form__tel">
+                            <ion-icon name="mail-open-outline"></ion-icon>
+                            <p> Email: mail@mail.com </p>
+                        </div>
+                    </div>
+                    <div class="CONTACTS__form__fill-the-form">
+                        <form action="post">
+                            <input id="Name" type="text" name="Name" placeholder="Name">
+                            <input id="E-mail" type="text" name="E-mail"  placeholder="Email">
+                            <input id="Message" type="text" name="Message" placeholder="Message">
+                            <button class="submit" type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--*-------------------------footer--------------------------footer-------------------------footer-------------------------footer*-------------------------->
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12">
+                    <img class="footer-img" src="img/footer.jpg" alr="footer">
+                </div>
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 footer-end">
+                    <div class="logo" >
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-snapchat"></ion-icon>
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <h4>Учебный макет взять с сайта https://www.w3schools.com/<br>
+                        Сделал https://github.com/Kreastor</h4>
+                    </div>
+                
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
